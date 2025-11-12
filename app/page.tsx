@@ -120,8 +120,8 @@ export default function Page() {
                 <p className="text-3xl font-semibold text-white">+ de 9.000</p>
                 <p>alunos, atletas e empresas impactados por treinamentos e mentorias.</p>
               </div>
-              <div className="rounded-3xl border border-white/10 bg-white/5 p-7 md:p-9">
-                <p className="text-[1.9rem] font-semibold leading-[1.08] text-white md:text-[2.2rem] md:leading-[1.08]">
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-10">
+                <p className="text-[1.7rem] font-semibold leading-tight text-white md:text-[2rem] md:leading-tight">
                   Performance
                   <br />
                   360º
