@@ -112,17 +112,23 @@ export default function Page() {
               </Link>
             </div>
             <div className="mt-12 grid gap-4 text-sm text-white/60 sm:grid-cols-3">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 text-left md:p-7">
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left md:p-8">
                 <p className="text-3xl font-semibold text-white">25+</p>
                 <p>anos formando líderes, professores e equipes multidisciplinares.</p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 md:p-7">
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
                 <p className="text-3xl font-semibold text-white">+ de 9.000</p>
                 <p>alunos, atletas e empresas impactados por treinamentos e mentorias.</p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 md:p-7">
-                <p className="text-3xl font-semibold text-white">Performance 360º</p>
-                <p className="text-white/90">Resultado que conecta corpo, mente, liderança e legado.</p>
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
+                <p className="text-[2.2rem] font-semibold leading-[1.05] text-white md:text-[2.4rem]">
+                  Performance
+                  <br />
+                  360º
+                </p>
+                <p className="mt-3 text-white/90">
+                  Resultado que conecta corpo, mente, liderança e legado.
+                </p>
               </div>
             </div>
           </div>
