@@ -11,6 +11,12 @@ const navLinks = [
   { href: "/contato", label: "Contato" },
 ];
 
+const whatsappNumber = "+5551997201564";
+const whatsappSanitized = whatsappNumber.replace(/\D/g, "");
+const whatsappPresetMessage = encodeURIComponent(
+  "Olá Décio! Quero falar sobre alta performance."
+);
+
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
@@ -80,7 +86,7 @@ export function SiteHeader() {
               ))}
             </div>
             <a
-              href="https://wa.me/5551997201564?text=Ol%C3%A1%20D%C3%A9cio!%20Quero%20falar%20sobre%20alta%20performance."
+              href={`https://wa.me/${whatsappSanitized}?text=${whatsappPresetMessage}`}
               target="_blank"
               rel="noreferrer"
               className="mt-4 flex items-center justify-center gap-2 rounded-xl bg-brand-500 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-500/40 transition hover:bg-brand-400"

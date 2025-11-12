@@ -2,11 +2,12 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const whatsappNumber = "5551997201564";
+const whatsappNumber = "+5551997201564";
+const whatsappSanitized = whatsappNumber.replace(/\D/g, "");
 const whatsappMessage = encodeURIComponent(
   "Olá Décio! Quero levar minha performance para o próximo nível."
 );
-const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+const whatsappLink = `https://wa.me/${whatsappSanitized}?text=${whatsappMessage}`;
 
 const transformationHighlights = [
   "Construir equipes e lideranças com foco em alta performance sustentável.",
@@ -111,15 +112,15 @@ export default function Page() {
               </Link>
             </div>
             <div className="mt-12 grid gap-4 text-sm text-white/60 sm:grid-cols-3">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-left">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 text-left md:p-7">
                 <p className="text-3xl font-semibold text-white">25+</p>
                 <p>anos formando líderes, professores e equipes multidisciplinares.</p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 md:p-7">
                 <p className="text-3xl font-semibold text-white">+ de 9.000</p>
                 <p>alunos, atletas e empresas impactados por treinamentos e mentorias.</p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 md:p-7">
                 <p className="text-3xl font-semibold text-white">Performance 360º</p>
                 <p className="text-white/90">Resultado que conecta corpo, mente, liderança e legado.</p>
               </div>
@@ -276,12 +277,38 @@ export default function Page() {
               </p>
             </div>
             <div className="space-y-2 text-white/70">
-              <p>Cel/WhatsApp: <a href={whatsappLink} className="text-brand-300 hover:text-brand-200">+55 51 99720-1564</a></p>
+              <p>Cel/WhatsApp: <a href={whatsappLink} className="text-brand-300 hover:text-brand-200">{whatsappNumber}</a></p>
               <p>Instagram: <a href="https://www.instagram.com/deciotiaraju" target="_blank" rel="noreferrer" className="text-brand-300 hover:text-brand-200">@deciotiaraju</a></p>
               <p>Facebook: <a href="https://www.facebook.com/deciotiaraju" target="_blank" rel="noreferrer" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></p>
               <p>LinkedIn: <a href="https://www.linkedin.com/in/deciotiaraju" target="_blank" rel="noreferrer" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></p>
               <p>YouTube: <a href="https://www.youtube.com/@deciotiaraju" target="_blank" rel="noreferrer" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-white/5 py-20">
+        <div className="container">
+          <div className="text-center">
+            <span className="kicker">Na prática</span>
+            <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
+              Alta performance em ação com Décio Tiarajú
+            </h2>
+            <p className="mt-4 mx-auto max-w-3xl text-white/85">
+              Assista a trechos de palestras e treinamentos para sentir a energia, a metodologia e a entrega que transformam equipes e pessoas.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
+            <VideoCard
+              title="Construindo equipes resilientes"
+              description="Highlights de palestra sobre disciplina, liderança e performance extrema."
+              videoId="rAxwWApVE2w"
+            />
+            <VideoCard
+              title="Mentalidade de alta performance"
+              description="Conteúdo prático para acender autoconfiança e autorresponsabilidade."
+              videoId="aG1Y12EdjPU"
+            />
           </div>
         </div>
       </section>
@@ -342,5 +369,39 @@ function WhatsappIcon() {
     >
       <path d="M16.04 3C9.4 3 4 8.4 4 15.04c0 2.63.86 5.08 2.3 7.08L4 29l7.16-2.26a12.07 12.07 0 004.88 1.04c6.64 0 12.04-5.4 12.04-12.04S22.68 3 16.04 3zm0 21.96c-1.96 0-3.78-.52-5.36-1.44l-.38-.22-4.24 1.34 1.38-4.12-.24-.4A9.32 9.32 0 016.68 15c0-5.16 4.2-9.36 9.36-9.36 5.16 0 9.36 4.2 9.36 9.36 0 5.16-4.2 9.36-9.36 9.36zm5.16-6.98c-.28-.14-1.64-.82-1.9-.92-.26-.1-.44-.14-.62.14-.18.28-.72.92-.88 1.1-.16.18-.32.2-.6.06-.28-.14-1.18-.43-2.26-1.36-.84-.74-1.4-1.66-1.56-1.94-.16-.28-.02-.44.12-.58.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.06-.34 0-.48-.06-.14-.62-1.5-.86-2.06-.22-.52-.44-.46-.62-.46h-.54c-.18 0-.48.06-.74.34-.26.28-1 1-1 2.44 0 1.44 1.02 2.84 1.16 3.04.14.2 2 3.06 4.86 4.28.68.3 1.22.48 1.64.62.68.22 1.3.2 1.78.12.54-.08 1.64-.66 1.88-1.3.24-.64.24-1.18.16-1.3-.06-.12-.24-.18-.52-.32z" />
     </svg>
+  );
+}
+
+type VideoCardProps = {
+  title: string;
+  description: string;
+  videoId: string;
+};
+
+function VideoCard({ title, description, videoId }: VideoCardProps) {
+  return (
+    <div className="card bg-[var(--card)]/95">
+      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black">
+        <iframe
+          className="aspect-video w-full"
+          src={`https://www.youtube.com/embed/${videoId}`}
+          title={title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+      <div className="mt-5 space-y-2">
+        <h3 className="text-lg font-semibold text-white">{title}</h3>
+        <p className="text-sm text-white/80">{description}</p>
+        <a
+          href={`https://www.youtube.com/watch?v=${videoId}`}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-brand-200 transition hover:text-brand-100"
+        >
+          Assistir no YouTube
+        </a>
+      </div>
+    </div>
   );
 }
