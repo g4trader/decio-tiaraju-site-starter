@@ -93,7 +93,7 @@ export default function Page() {
   return (
     <main className="relative overflow-hidden">
       <section className="container py-20 md:py-28">
-        <div className="grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid items-start gap-12 md:grid-cols-[0.9fr_1.1fr]">
           <div className="relative flex flex-col items-center gap-6 text-center md:items-start md:text-left">
             <div className="flex flex-wrap justify-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-brand-100 md:justify-start">
               <span className="rounded-full border border-brand-200/40 bg-gradient-to-r from-brand-600/90 via-brand-500/90 to-brand-400/90 px-4 py-2 text-white shadow-lg shadow-brand-500/30">
