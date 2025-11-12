@@ -68,8 +68,22 @@ export default function Page() {
   return (
     <main className="relative overflow-hidden">
       <section className="container py-20 md:py-28">
-        <div className="grid items-center gap-12 md:grid-cols-[1.1fr_0.9fr]">
-        <div>
+        <div className="grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
+          <div className="relative flex flex-col items-center gap-6 text-center md:items-start md:text-left">
+            <div className="pointer-events-none absolute -top-6 -right-10 h-40 w-40 rounded-full bg-brand-500/30 blur-3xl" />
+            <Image
+              src="/decio-tiaraju.webp"
+              alt="Décio Tiarajú Rosa de Oliveira em treinamento"
+              width={640}
+              height={800}
+              className="relative w-full max-w-md rounded-3xl border border-white/10 object-cover shadow-2xl md:self-start"
+              priority
+            />
+            <p className="max-w-md text-base font-semibold uppercase tracking-[0.18em] text-brand-200 md:text-left">
+              Disciplina militar. Ciência do movimento. Liderança que entrega resultado em qualquer terreno.
+            </p>
+          </div>
+          <div>
             <div className="flex flex-wrap items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-brand-100">
               <span className="rounded-full border border-brand-200/40 bg-gradient-to-r from-brand-600/90 via-brand-500/90 to-brand-400/90 px-4 py-2 text-white shadow-lg shadow-brand-500/30">
                 Alta performance comprovada
@@ -130,20 +144,6 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="relative flex flex-col items-center gap-6 text-center md:items-end md:text-right">
-            <div className="pointer-events-none absolute -top-6 -left-10 h-40 w-40 rounded-full bg-brand-500/30 blur-3xl" />
-          <Image
-            src="/decio-tiaraju.webp"
-              alt="Décio Tiarajú Rosa de Oliveira em treinamento"
-            width={640}
-            height={800}
-              className="relative w-full max-w-md rounded-3xl border border-white/10 object-cover shadow-2xl md:self-end"
-            priority
-          />
-            <p className="max-w-md text-base font-semibold uppercase tracking-[0.18em] text-brand-200 md:text-right">
-              Disciplina militar. Ciência do movimento. Liderança que entrega resultado em qualquer terreno.
-            </p>
-        </div>
       </div>
       </section>
 
