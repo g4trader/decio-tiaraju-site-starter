@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -26,11 +27,18 @@ export function SiteHeader() {
       <div className="container flex items-center justify-between py-4">
         <Link
           href="/"
-          className="flex items-center gap-3 text-base font-semibold uppercase tracking-[0.28em] text-white"
+          className="flex items-center gap-4 text-base font-semibold uppercase tracking-[0.28em] text-white"
           onClick={close}
         >
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-500 font-semibold text-sm text-white shadow-lg shadow-brand-500/40">
-            DT
+          <span className="relative flex h-12 w-12 items-center justify-center rounded-full shadow-lg shadow-brand-500/40">
+            <Image
+              src="/decio-tiaraju.webp"
+              alt="Décio Tiarajú"
+              width={48}
+              height={48}
+              className="h-12 w-12 rounded-full object-cover"
+              priority
+            />
           </span>
           Décio Tiarajú
         </Link>
