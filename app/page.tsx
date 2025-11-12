@@ -69,16 +69,19 @@ export default function Page() {
       <section className="container py-20 md:py-28">
         <div className="grid items-center gap-12 md:grid-cols-[1.1fr_0.9fr]">
         <div>
+            <div className="inline-flex items-center gap-2 rounded-full border border-brand-400/40 bg-brand-500/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-brand-100 shadow-brand-500/30">
+              Alta performance comprovada
+            </div>
             <span className="kicker">Alta performance integral</span>
             <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-6xl">
-              A mentoria que acelera pessoas e equipes para resultados reais
+              A mentoria que acelera pessoas e equipes para resultados extremos
           </h1>
-            <p className="mt-6 text-lg text-white/80">
+            <p className="mt-6 text-lg text-white/90">
               Personal Trainer, palestrante e mentor com trajetória militar, esportiva
               e corporativa. Décio Tiarajú conecta disciplina, estratégia e saúde integral
               para construir energia, liderança e performance sustentáveis.
             </p>
-            <ul className="mt-8 space-y-3 text-white/85">
+            <ul className="mt-8 space-y-3 text-white/95">
               {transformationHighlights.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-1 h-2 w-2 rounded-full bg-brand-400" />
@@ -109,8 +112,8 @@ export default function Page() {
                 <p>anos formando líderes, professores e equipes multidisciplinares.</p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <p className="text-3xl font-semibold text-white">Milhares</p>
-                <p>de alunos, atletas e empresas impactados por treinamentos.</p>
+                <p className="text-3xl font-semibold text-white">+ de 9.000</p>
+                <p>alunos, atletas e empresas impactados por treinamentos e mentorias.</p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                 <p className="text-3xl font-semibold text-white">Performance 360º</p>
@@ -140,7 +143,7 @@ export default function Page() {
               Da roça ao palco: disciplina militar, ciência e humanidade a serviço da sua evolução
             </h2>
           </div>
-          <div className="space-y-4 text-white/80">
+          <div className="space-y-4 text-white/90">
             <p>
               Pai da Doce Helena, criado no interior do Rio Grande do Sul, Décio começou a trabalhar aos
               seis anos e venceu os desafios das lavouras até integrar a tropa de elite do Exército Brasileiro
@@ -162,11 +165,11 @@ export default function Page() {
             <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
               Programas sob medida para transformar mentalidade, hábitos e resultados
             </h2>
-            <p className="mt-4 text-white/80">
+            <p className="mt-4 text-white/90">
               Cada projeto nasce de uma escuta ativa para entender o contexto, alinhar expectativas e
               construir um plano de ação prático que gere mudanças consistentes.
             </p>
-            <ul className="mt-6 space-y-3 text-white/85">
+            <ul className="mt-6 space-y-3 text-white/95">
               {deliveryPillars.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-1 h-2 w-2 rounded-full bg-brand-300" />
@@ -186,8 +189,10 @@ export default function Page() {
           <div className="grid gap-6">
         <div className="card">
               <p className="kicker">Alta Performance 360º</p>
-              <h3 className="text-2xl font-semibold">Resultados que conectam corpo, mente e liderança</h3>
-              <p className="mt-3 text-white/75">
+              <h3 className="text-2xl font-semibold text-white">
+                Resultados que conectam corpo, mente e liderança
+              </h3>
+              <p className="mt-3 text-white/85">
                 Atendimentos personalizados, vivências práticas e conteúdos estratégicos geram evolução tangível para
                 pessoas físicas e jurídicas. Jornada completa da autopercepção à execução disciplinada.
               </p>
@@ -214,7 +219,7 @@ export default function Page() {
             <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
               Cinco gestões para viver e liderar em alta performance
             </h2>
-            <p className="mt-4 max-w-3xl mx-auto text-white/75">
+            <p className="mt-4 mx-auto max-w-3xl text-white/90">
               Um framework exclusivo que integra gestão do tempo, do conhecimento, do sono,
               da alimentação e do movimento. Um roteiro prático para aplicar disciplina,
               inteligência emocional e saúde integral no seu dia a dia.
@@ -238,7 +243,7 @@ export default function Page() {
             <h2 className="text-3xl font-semibold md:text-4xl">
               Trajetória acadêmica, militar e esportiva reunidas em uma entrega única
             </h2>
-            <ul className="space-y-3 text-white/80">
+            <ul className="space-y-3 text-white/95">
               {credentials.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-1 h-2 w-2 rounded-full bg-brand-400" />
@@ -247,11 +252,11 @@ export default function Page() {
               ))}
             </ul>
           </div>
-          <div className="card h-full space-y-4 bg-[var(--card)]/90">
+          <div className="card h-full space-y-4 bg-[var(--card)]/95">
             <h3 className="text-2xl font-semibold text-white">
               O que você leva para a sua equipe ou jornada individual
             </h3>
-            <p className="text-white/75">
+            <p className="text-white/90">
               Conteúdos teórico-práticos, experiências transformadoras, criação de hábitos
               vencedores e uma condução firme — construída na vida real — para guiar sua evolução.
             </p>
@@ -280,7 +285,7 @@ export default function Page() {
           <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
             Vamos construir o seu próximo grande resultado
           </h2>
-          <p className="mt-4 mx-auto max-w-2xl text-white/80">
+          <p className="mt-4 mx-auto max-w-2xl text-white/90">
             Envie uma mensagem agora mesmo e receba um diagnóstico inicial sem custo para entender
             qual formato (mentoria, treinamento ou palestra) acelera a sua meta.
           </p>
