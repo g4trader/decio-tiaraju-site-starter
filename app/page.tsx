@@ -70,6 +70,14 @@ export default function Page() {
       <section className="container py-20 md:py-28">
         <div className="grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
           <div className="relative flex flex-col items-center gap-6 text-center md:items-start md:text-left">
+            <div className="flex flex-wrap justify-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-brand-100 md:justify-start">
+              <span className="rounded-full border border-brand-200/40 bg-gradient-to-r from-brand-600/90 via-brand-500/90 to-brand-400/90 px-4 py-2 text-white shadow-lg shadow-brand-500/30">
+                Alta performance comprovada
+              </span>
+              <span className="rounded-full border border-brand-300/30 px-4 py-2 text-brand-200/90">
+                Alta performance integral
+              </span>
+            </div>
             <div className="pointer-events-none absolute -top-6 -right-10 h-40 w-40 rounded-full bg-brand-500/30 blur-3xl" />
             <Image
               src="/decio-tiaraju.webp"
@@ -84,14 +92,6 @@ export default function Page() {
             </p>
           </div>
           <div>
-            <div className="flex flex-wrap items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-brand-100">
-              <span className="rounded-full border border-brand-200/40 bg-gradient-to-r from-brand-600/90 via-brand-500/90 to-brand-400/90 px-4 py-2 text-white shadow-lg shadow-brand-500/30">
-                Alta performance comprovada
-              </span>
-              <span className="rounded-full border border-brand-300/30 px-4 py-2 text-brand-200/90">
-                Alta performance integral
-              </span>
-            </div>
             <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-6xl">
               A mentoria que acelera pessoas e equipes para resultados extremos
           </h1>
