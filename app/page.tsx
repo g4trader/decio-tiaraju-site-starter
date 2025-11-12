@@ -121,9 +121,7 @@ export default function Page() {
                 <p>alunos, atletas e empresas impactados por treinamentos e mentorias.</p>
               </div>
               <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-10">
-                <p className="text-[1.7rem] font-semibold leading-tight text-white md:text-[2rem] md:leading-tight">
-                  Performance
-                  <br />
+                <p className="text-[2.8rem] font-semibold leading-tight text-white md:text-[3.4rem]">
                   360
                 </p>
                 <p className="mt-3 text-white/90">
@@ -201,7 +199,7 @@ export default function Page() {
             </div>
           </div>
           <div className="grid gap-6">
-            <div className="card">
+        <div className="card">
               <p className="kicker">Alta Performance 360</p>
               <h3 className="text-2xl font-semibold text-white">
                 Resultados que conectam corpo, mente e liderança
