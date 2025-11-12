@@ -69,10 +69,12 @@ export default function Page() {
       <section className="container py-20 md:py-28">
         <div className="grid items-center gap-12 md:grid-cols-[1.1fr_0.9fr]">
         <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-brand-400/40 bg-brand-500/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-brand-100 shadow-brand-500/30">
-              Alta performance comprovada
+            <div className="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-brand-100">
+              <span className="rounded-full border border-brand-400/40 bg-brand-500/20 px-4 py-2 shadow-brand-500/30">
+                Alta performance comprovada
+              </span>
+              <span className="text-brand-300">Alta performance integral</span>
             </div>
-            <span className="kicker">Alta performance integral</span>
             <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-6xl">
               A mentoria que acelera pessoas e equipes para resultados extremos
           </h1>
@@ -121,16 +123,19 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="relative flex justify-center md:justify-end">
-            <div className="pointer-events-none absolute -top-6 -left-6 h-32 w-32 rounded-full bg-brand-500/40 blur-3xl" />
+          <div className="relative flex flex-col items-center gap-6 text-center md:items-end md:text-right">
+            <div className="pointer-events-none absolute -top-6 -left-10 h-40 w-40 rounded-full bg-brand-500/30 blur-3xl" />
           <Image
             src="/decio-tiaraju.webp"
               alt="Décio Tiarajú Rosa de Oliveira em treinamento"
             width={640}
             height={800}
-              className="relative w-full max-w-md rounded-3xl border border-white/10 object-cover shadow-2xl"
+              className="relative w-full max-w-md rounded-3xl border border-white/10 object-cover shadow-2xl md:self-end"
             priority
           />
+            <p className="max-w-md text-base font-semibold uppercase tracking-[0.18em] text-brand-200 md:text-right">
+              Disciplina militar. Ciência do movimento. Liderança que entrega resultado em qualquer terreno.
+            </p>
         </div>
       </div>
       </section>
