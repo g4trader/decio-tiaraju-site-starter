@@ -1,5 +1,7 @@
 
 import Link from "next/link";
+import Image from "next/image";
+
 export default function Page() {
   return (
     <section className="container py-16">
@@ -18,20 +20,18 @@ export default function Page() {
             <Link href="/contato" className="px-4 py-2 rounded-xl border border-white/20 hover:border-white/40">Falar com Décio</Link>
           </div>
         </div>
-        <div className="card">
-          <h3 className="text-xl font-semibold">Mentorias, Palestras e Treinamentos</h3>
-          <ul className="mt-3 space-y-2 text-white/80 list-disc list-inside">
-            <li>Alta performance pessoal e profissional</li>
-            <li>Autoconfiança e autorresponsabilidade</li>
-            <li>Disciplina e liderança eficaz</li>
-            <li>Planejamento e desenvolvimento estratégico</li>
-            <li>Saúde integral e qualidade de vida</li>
-            <li>Paternidade com responsabilidade afetiva</li>
-            <li>Sobrevivência e Resgate</li>
-          </ul>
-          <Link href="/servicos" className="inline-block mt-4 text-brand-300 hover:text-brand-200">Explorar trilhas</Link>
+        <div className="flex justify-center">
+          <Image
+            src="/decio-tiaraju.webp"
+            alt="Décio Tiarajú palestrando"
+            width={640}
+            height={800}
+            className="rounded-2xl shadow-lg w-full max-w-md object-cover"
+            priority
+          />
         </div>
       </div>
+
       <div className="mt-16 grid md:grid-cols-3 gap-6">
         <div className="card">
           <p className="kicker">Para empresas</p>

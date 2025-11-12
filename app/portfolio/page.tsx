@@ -6,7 +6,7 @@ export default function Page() {
       <h1 className="text-3xl font-semibold">Portfólio</h1>
       <p className="mt-4 text-white/80">
         Selecione aqui seus principais cases, missões solidárias e programas de treinamento. Substitua os cards abaixo
-        com os itens do seu PDF de portfólio: título, objetivo, público, metodologia, resultados e depoimentos.
+        com os itens do seu portfólio: título, objetivo, público, metodologia, resultados e depoimentos.
       </p>
       <div className="mt-8 grid md:grid-cols-3 gap-6">
         {Array.from({ length: 6 }).map((_, i) => (

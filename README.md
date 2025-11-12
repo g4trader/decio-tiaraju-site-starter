@@ -1,5 +1,7 @@
 
-# Site — Décio Tiarajú (Next.js + Tailwind)
+# Site — Décio Tiarajú (Next.js + Tailwind) — com foto no hero
+
+Inclui foto otimizada em `/public/decio-tiaraju.webp` e imagem aplicada no hero (Home) e na página Sobre.
 
 ## Rodar local
 ```bash
@@ -14,12 +16,12 @@ http://localhost:3000
 3) Build & deploy
 
 ## Onde editar
-- `app/page.tsx`: seção hero e destaques
-- `app/sobre/page.tsx`: biografia e formações
+- `app/page.tsx`: seção hero e destaques + foto
+- `app/sobre/page.tsx`: bio, foto e formações
 - `app/servicos/page.tsx`: ofertas e trilhas
 - `app/portfolio/page.tsx`: cases (preencher com o PDF)
 - `app/contato/page.tsx`: canais e formulário
-- Cores: `tailwind.config.js` (namespace `brand`)
+- Cores: `tailwind.config.js` (`brand`)
 
 ## Próximos passos
 - Formulário com Formspree/Getform ou API própria
