@@ -313,8 +313,7 @@ export default function Page() {
               O que você leva para a sua equipe ou jornada individual
             </h3>
             <p className="text-white/90">
-              Conteúdos teórico-práticos, experiências transformadoras, criação de hábitos
-              vencedores e uma condução firme — construída na vida real — para guiar sua evolução.
+              Conteúdos teórico-práticos, experiências transformadoras, criação de hábitos vencedores em uma condução harmônica, disciplinada e eficaz, construida na vida real, para guiar sua evolução e a construção do seu legado.
             </p>
             <div className="rounded-2xl border border-brand-500/20 bg-brand-500/10 p-5">
               <p className="text-sm uppercase tracking-[0.18em] text-brand-200">
