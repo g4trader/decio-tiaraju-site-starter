@@ -113,7 +113,7 @@ export default function Page() {
               priority
             />
             <p className="max-w-md text-base font-semibold uppercase tracking-[0.18em] text-brand-200 md:text-left">
-              Disciplina militar. Ciência do movimento. Liderança que entrega resultado em qualquer terreno.
+              Disciplina de atleta e militar. Ciência do movimento e do comportamento humano. Liderança que entrega resultados em qualquer ambiente.
             </p>
             <div className="flex flex-wrap justify-center gap-3 md:justify-start">
               {heroSocialLinks.map(({ name, href, icon: Icon }) => (
