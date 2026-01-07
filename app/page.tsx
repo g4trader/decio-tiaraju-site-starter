@@ -191,7 +191,7 @@ export default function Page() {
           <div>
             <span className="kicker">Quem é Décio Tiarajú</span>
             <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
-              Da roça ao palco: disciplina militar, ciência e humanidade a serviço da sua evolução
+              DE BOIA-FRIA A LIDER ESTRATÉGISTA: Disciplina de ultramaratonista e militar da tropa de elite, especialista em saúde, educação e comportamento humano, a disposição da sua evolução.
             </h2>
           </div>
           <div className="space-y-4 text-white/90">
