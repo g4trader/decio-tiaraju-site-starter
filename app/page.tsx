@@ -199,9 +199,13 @@ export default function Page() {
               Pai da Doce Helena, criado no interior do Rio Grande do sul, Décio Tiarajú começou trabalhar aos seis anos e venceu os desafios das lavouras até integrar ao Exército brasileiro, foi sargento R2 e, membro da tropa de elite.
             </p>
             <p>
-              Hoje atua como personal trainer, palestrante profissional, mentor e consultor. Seu propósito é
-              servir, inspirar inovação, saúde integral e atitudes de alta performance em pessoas e organizações
-              que buscam reinvenção.
+              Essa vivência moldou o equilíbrio emocional, o espírito de liderança, de servir ao próximo e cumprir com eficácia toda e qualquer missão.
+            </p>
+            <p>
+              Hoje atua como personal trainer, palestrante profissional, mentor, consultor, treinador de líderes e equipes empresariais.
+            </p>
+            <p>
+              Seu propósito é servir, inspirar disciplina para inovação comportamental, saúde integral, alta performance para pessoas e organizações que buscam construir um legado.
             </p>
           </div>
         </div>
@@ -290,7 +294,7 @@ export default function Page() {
           <div className="space-y-6">
             <span className="kicker">Credenciais & experiências</span>
             <h2 className="text-3xl font-semibold md:text-4xl">
-              Trajetória acadêmica, militar e esportiva reunidas em uma entrega única
+              Tragetória acadêmica, militar, esportiva, reunidas em um método estratégico e eficaz.
             </h2>
             <ul className="space-y-3 text-white/95">
               {credentials.map((item) => (
