@@ -132,7 +132,7 @@ export default function Page() {
           </div>
         <div>
             <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-6xl">
-              A mentoria que acelera pessoas e equipes para resultados extremos
+              Mentoria que transforma disciplina em método e gera resultados positivos, mesmo em cenários adversos.
           </h1>
             <p className="mt-6 text-lg text-white/90">
               Personal Trainer, palestrante e mentor com trajetória militar, esportiva
