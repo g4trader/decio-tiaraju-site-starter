@@ -53,11 +53,14 @@ const methodGap = [
 ];
 
 const credentials = [
-  "Bacharel em Educação Física com Licenciatura Plena (URCAMP/RS).",
-  "Pós-graduações em Reestruturação Corporal Global, Reabilitação Cardíaca e Fisiologia do Exercício.",
-  "Operador especial em terrenos e situações adversas, sobrevivencialista e resgatista voluntário.",
-  "Mais de 25 anos de docência e formação de equipes nas áreas de saúde, segurança e educação.",
-  "Mentor de atletas de alta performance e palestrante profissional.",
+  "Bacharelado em Educação Física - URCAMP/RS;",
+  "Licenciatura em Educação Física - URCAMP/RS;",
+  "Pós Graduação em Reestruturação Corporal Global - UGF/RJ;",
+  "Pós Graduação em Reabilitação Cardíaca e Grupos Especiais - UGF/RJ;",
+  "Pós Graduação em Fisiologia do Exercício - ESEF/UFRGS;",
+  "Especialista em Comportamento Humano.",
+  "Mentor de Líderes e Atletas de Alta Performance e Palestrante Profissional.",
+  "Mais de 25 anos de Docência, nàs áreas de: Saúde, Segurança e Educação.",
 ];
 
 const values = [
