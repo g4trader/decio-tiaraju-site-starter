@@ -196,9 +196,7 @@ export default function Page() {
           </div>
           <div className="space-y-4 text-white/90">
             <p>
-              Pai da Doce Helena, criado no interior do Rio Grande do Sul, Décio começou a trabalhar aos
-              seis anos e venceu os desafios das lavouras até integrar a tropa de elite do Exército Brasileiro
-              como sargento R2. Essa vivência moldou a resiliência, a liderança e o sentido de missão que o acompanham.
+              Pai da Doce Helena, criado no interior do Rio Grande do sul, Décio Tiarajú começou trabalhar aos seis anos e venceu os desafios das lavouras até integrar ao Exército brasileiro, foi sargento R2 e, membro da tropa de elite.
             </p>
             <p>
               Hoje atua como personal trainer, palestrante profissional, mentor e consultor. Seu propósito é
