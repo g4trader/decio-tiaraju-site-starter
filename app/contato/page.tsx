@@ -24,9 +24,9 @@ export default function Page() {
           <h3 className="text-xl font-semibold">Outros canais</h3>
           <ul className="space-y-2 text-white/80">
             <li><strong>Telefone/WhatsApp:</strong> <a href="https://wa.me/5551997201564" className="text-brand-300 hover:text-brand-200">+55 51 99720-1564</a></li>
-            <li><strong>Instagram:</strong> <a href="https://instagram.com/deciotiaraju" className="text-brand-300 hover:text-brand-200">@deciotiaraju</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deciotiaraju" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></li>
-            <li><strong>YouTube:</strong> <a href="https://www.youtube.com/@deciotiaraju" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/deciotiaraju?igsh=OGtqMWl3eHg1aDZ3" className="text-brand-300 hover:text-brand-200">@deciotiaraju</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/d%C3%A9ciotiaraj%C3%BA?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></li>
+            <li><strong>YouTube:</strong> <a href="https://youtube.com/@deciotiarajupalestrante?si=P5uHMjtZkonP30um" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></li>
             <li><strong>E-mail:</strong> <span className="text-white/70">contato@deciotiaraju.com.br</span></li>
           </ul>
         </div>

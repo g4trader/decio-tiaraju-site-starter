@@ -325,10 +325,10 @@ export default function Page() {
             </div>
             <div className="space-y-2 text-white/70">
               <p>Cel/WhatsApp: <a href={whatsappLink} className="text-brand-300 hover:text-brand-200">{whatsappNumber}</a></p>
-              <p>Instagram: <a href="https://www.instagram.com/deciotiaraju" target="_blank" rel="noreferrer" className="text-brand-300 hover:text-brand-200">@deciotiaraju</a></p>
+              <p>Instagram: <a href="https://www.instagram.com/deciotiaraju?igsh=OGtqMWl3eHg1aDZ3" target="_blank" rel="noreferrer" className="text-brand-300 hover:text-brand-200">@deciotiaraju</a></p>
               <p>Facebook: <a href="https://www.facebook.com/deciotiaraju" target="_blank" rel="noreferrer" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></p>
-              <p>LinkedIn: <a href="https://www.linkedin.com/in/deciotiaraju" target="_blank" rel="noreferrer" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></p>
-              <p>YouTube: <a href="https://www.youtube.com/@deciotiaraju" target="_blank" rel="noreferrer" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></p>
+              <p>LinkedIn: <a href="https://www.linkedin.com/in/d%C3%A9ciotiaraj%C3%BA?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></p>
+              <p>YouTube: <a href="https://youtube.com/@deciotiarajupalestrante?si=P5uHMjtZkonP30um" target="_blank" rel="noreferrer" className="text-brand-300 hover:text-brand-200">Décio Tiarajú</a></p>
             </div>
           </div>
         </div>
