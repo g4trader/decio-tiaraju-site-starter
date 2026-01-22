@@ -347,14 +347,14 @@ export default function Page() {
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             <VideoCard
+              title="Construindo equipes resilientes"
+              description="Highlights de palestra sobre disciplina, liderança e performance extrema."
+              videoId="rAxwWApVE2w"
+            />
+            <VideoCard
               title="Inovação Comportamental - Completo"
               description="Conteúdo completo sobre transformação comportamental e alta performance."
               videoId="lps88I7Diko"
-            />
-            <VideoCard
-              title="Mentalidade de alta performance"
-              description="Conteúdo prático para acender autoconfiança e autorresponsabilidade."
-              videoId="aG1Y12EdjPU"
             />
           </div>
         </div>
