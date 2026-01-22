@@ -1,29 +1,73 @@
+import Link from "next/link";
 
-export const metadata = { title: "Serviços — Mentoria, Palestras e Treinamentos" };
+export const metadata = { title: "Serviços — Consultoria, Mentoria, Palestras e Treinamentos" };
+
+const servicos = [
+  {
+    href: "/servicos/consultoria",
+    title: "Consultoria",
+    description: "Disciplina, liderança e construção de legado para organizações e líderes.",
+  },
+  {
+    href: "/servicos/mentoria",
+    title: "Mentoria",
+    description: "Disciplina que sustenta resultados. Método que constrói legado.",
+  },
+  {
+    href: "/servicos/palestras",
+    title: "Palestras",
+    description: "Do resgate à reconstrução – disciplina e liderança para superar adversidade.",
+  },
+  {
+    href: "/servicos/personal-training",
+    title: "Personal Training",
+    description: "Treinamento físico individualizado com método, ciência e experiência.",
+  },
+  {
+    href: "/servicos/treinamento-presencial",
+    title: "Treinamento Presencial",
+    description: "Imersão teórico-prática para desenvolver disciplina e liderança.",
+  },
+  {
+    href: "/servicos/workshop",
+    title: "Workshop",
+    description: "Do resgate à reconstrução – método prático para enfrentar adversidades.",
+  },
+];
+
 export default function Page() {
   return (
     <section className="container py-16">
-      <h1 className="text-3xl font-semibold">O que eu faço</h1>
-      <p className="mt-4 text-white/80">
-        Suporte para pessoas e empresas que buscam inovação e reinvenção por meio de mentorias, cursos, palestras,
-        consultorias e treinamentos — presenciais e online.
-      </p>
-      <div className="mt-8 grid md:grid-cols-2 gap-6">
-        <div className="card"><h3 className="text-xl font-semibold">Mentoria Individual</h3>
-          <ul className="mt-2 text-white/80 list-disc list-inside">
-            <li>Alta performance pessoal</li><li>Autoconfiança & autorresponsabilidade</li><li>Saúde integral e qualidade de vida</li>
-          </ul></div>
-        <div className="card"><h3 className="text-xl font-semibold">Programas In Company</h3>
-          <ul className="mt-2 text-white/80 list-disc list-inside">
-            <li>Liderança eficaz e cultura de disciplina</li><li>Gestão do conhecimento & planejamento estratégico</li><li>Equipes desportivas</li>
-          </ul></div>
-        <div className="card"><h3 className="text-xl font-semibold">Cursos & Workshops</h3>
-          <ul className="mt-2 text-white/80 list-disc list-inside">
-            <li>Auto cuidado e saúde integral</li><li>Personal Training (on/offline)</li><li>Sobrevivência e Resgate</li>
-          </ul></div>
-        <div className="card"><h3 className="text-xl font-semibold">Palestras</h3>
-          <p className="mt-2 text-white/80">Conteúdos teórico-práticos e aplicáveis, conectando propósito, técnica e execução.</p></div>
+      <div className="text-center">
+        <span className="kicker">Serviços</span>
+        <h1 className="mt-3 text-4xl font-semibold md:text-5xl">
+          Soluções para alta performance e construção de legado
+        </h1>
+        <p className="mt-6 max-w-2xl mx-auto text-lg text-white/80">
+          Consultoria, mentoria, palestras, treinamentos e workshops baseados em experiência real,
+          disciplina e liderança aplicada.
+        </p>
+      </div>
+      <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {servicos.map((servico) => (
+          <Link
+            key={servico.href}
+            href={servico.href}
+            className="card group transition hover:scale-105 hover:border-brand-500/50"
+          >
+            <h3 className="text-xl font-semibold text-white group-hover:text-brand-200">
+              {servico.title}
+            </h3>
+            <p className="mt-3 text-white/80">{servico.description}</p>
+            <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-300 group-hover:text-brand-200">
+              Conhecer mais
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </span>
+          </Link>
+        ))}
       </div>
     </section>
-  )
+  );
 }

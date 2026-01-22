@@ -6,8 +6,16 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "/sobre", label: "Quem sou" },
-  { href: "/servicos", label: "Soluções" },
   { href: "/contato", label: "Contato" },
+];
+
+const servicosLinks = [
+  { href: "/servicos/consultoria", label: "Consultoria" },
+  { href: "/servicos/mentoria", label: "Mentoria" },
+  { href: "/servicos/palestras", label: "Palestras" },
+  { href: "/servicos/personal-training", label: "Personal Training" },
+  { href: "/servicos/treinamento-presencial", label: "Treinamento presencial" },
+  { href: "/servicos/workshop", label: "Workshop" },
 ];
 
 const whatsappNumber = "+5551997201564";
@@ -18,6 +26,7 @@ const whatsappPresetMessage = encodeURIComponent(
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [servicosOpen, setServicosOpen] = useState(false);
 
   const toggle = () => setOpen((state) => !state);
   const close = () => setOpen(false);
@@ -44,7 +53,7 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-8 text-sm font-semibold text-white/90 md:flex">
-          {navLinks.slice(0, -1).map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -53,6 +62,31 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
+          <div
+            className="relative"
+            onMouseEnter={() => setServicosOpen(true)}
+            onMouseLeave={() => setServicosOpen(false)}
+          >
+            <Link
+              href="/servicos"
+              className="transition hover:text-white"
+            >
+              Serviços
+            </Link>
+            {servicosOpen && (
+              <div className="absolute left-0 top-full mt-2 w-64 rounded-xl border border-white/10 bg-gradient-to-br from-[#041024] via-[#0f2f75] to-[#041024] p-2 shadow-2xl">
+                {servicosLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block rounded-lg px-4 py-2 text-sm text-white/90 transition hover:bg-brand-500/20 hover:text-white"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
           <Link
             href="/contato"
             className="rounded-full bg-brand-500 px-4 py-2 text-white shadow-lg shadow-brand-500/40 transition hover:bg-brand-400"
@@ -90,6 +124,25 @@ export function SiteHeader() {
                   {link.label}
                 </Link>
               ))}
+              <Link
+                href="/servicos"
+                className="rounded-xl border border-white/8 bg-white/5 px-4 py-3 text-white transition hover:bg-brand-500/20"
+                onClick={close}
+              >
+                Serviços
+              </Link>
+              <div className="ml-4 mt-2 flex flex-col gap-2 border-l-2 border-brand-500/30 pl-4">
+                {servicosLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-sm text-white/80 transition hover:text-white"
+                    onClick={close}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
             <a
               href={`https://wa.me/${whatsappSanitized}?text=${whatsappPresetMessage}`}
