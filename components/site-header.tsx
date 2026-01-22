@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const navLinks = [
   { href: "/sobre", label: "Quem sou" },
@@ -27,9 +27,33 @@ const whatsappPresetMessage = encodeURIComponent(
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const [servicosOpen, setServicosOpen] = useState(false);
+  const servicosTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const servicosContainerRef = useRef<HTMLDivElement>(null);
 
   const toggle = () => setOpen((state) => !state);
   const close = () => setOpen(false);
+
+  const handleServicosMouseEnter = () => {
+    if (servicosTimeoutRef.current) {
+      clearTimeout(servicosTimeoutRef.current);
+      servicosTimeoutRef.current = null;
+    }
+    setServicosOpen(true);
+  };
+
+  const handleServicosMouseLeave = () => {
+    servicosTimeoutRef.current = setTimeout(() => {
+      setServicosOpen(false);
+    }, 200);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (servicosTimeoutRef.current) {
+        clearTimeout(servicosTimeoutRef.current);
+      }
+    };
+  }, []);
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-gradient-to-r from-[#041024] via-[#0f2f75] to-[#041024] shadow-lg shadow-[#0f2f75]/20">
@@ -63,9 +87,10 @@ export function SiteHeader() {
             </Link>
           ))}
           <div
+            ref={servicosContainerRef}
             className="relative"
-            onMouseEnter={() => setServicosOpen(true)}
-            onMouseLeave={() => setServicosOpen(false)}
+            onMouseEnter={handleServicosMouseEnter}
+            onMouseLeave={handleServicosMouseLeave}
           >
             <Link
               href="/servicos"
@@ -74,16 +99,22 @@ export function SiteHeader() {
               Serviços
             </Link>
             {servicosOpen && (
-              <div className="absolute left-0 top-full mt-2 w-64 rounded-xl border border-white/10 bg-gradient-to-br from-[#041024] via-[#0f2f75] to-[#041024] p-2 shadow-2xl">
-                {servicosLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block rounded-lg px-4 py-2 text-sm text-white/90 transition hover:bg-brand-500/20 hover:text-white"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+              <div
+                className="absolute left-0 top-full pt-2 w-64"
+                onMouseEnter={handleServicosMouseEnter}
+                onMouseLeave={handleServicosMouseLeave}
+              >
+                <div className="rounded-xl border border-white/10 bg-gradient-to-br from-[#041024] via-[#0f2f75] to-[#041024] p-2 shadow-2xl">
+                  {servicosLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="block rounded-lg px-4 py-2.5 text-sm text-white/90 transition hover:bg-brand-500/20 hover:text-white"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
