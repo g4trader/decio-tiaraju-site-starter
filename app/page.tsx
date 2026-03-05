@@ -108,7 +108,7 @@ export default function Page() {
             </div>
             <div className="pointer-events-none absolute -top-6 -right-10 h-40 w-40 rounded-full bg-brand-500/30 blur-3xl" />
             <Image
-              src="/decio-tiaraju.webp"
+              src="/conexao_decioED_9346.webp"
               alt="Décio Tiarajú Rosa de Oliveira em treinamento"
               width={640}
               height={800}
