@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Mentoria para Alta Performance — Disciplina que sustenta resultados",
-  description: "Mentoria que transforma disciplina em método prático e gera resultados positivos, mesmo em cenários adversos.",
+  description: "Mentoria que transforma disciplina em método e gera resultados positivos, mesmo em cenários adversos. XXXXX",
 };
 
 const whatsappNumber = "+5551997201564";
