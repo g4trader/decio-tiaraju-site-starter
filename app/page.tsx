@@ -107,14 +107,16 @@ export default function Page() {
               </span>
             </div>
             <div className="pointer-events-none absolute -top-6 -right-10 h-40 w-40 rounded-full bg-brand-500/30 blur-3xl" />
-            <Image
-              src="/conexao_decioED_9346.webp"
-              alt="Décio Tiarajú Rosa de Oliveira em treinamento"
-              width={640}
-              height={800}
-              className="relative w-full max-w-md rounded-3xl border border-white/10 object-cover shadow-2xl md:self-start"
-              priority
-            />
+            <div className="relative w-full max-w-md overflow-hidden rounded-3xl border border-white/10 shadow-2xl md:self-start">
+              <Image
+                src="/conexao_decioED_9346.webp"
+                alt="Décio Tiarajú Rosa de Oliveira em treinamento"
+                width={640}
+                height={800}
+                className="relative w-full scale-125 object-cover object-center"
+                priority
+              />
+            </div>
             <p className="max-w-md text-base font-semibold uppercase tracking-[0.18em] text-brand-200 md:text-left">
               Disciplina de atleta e militar. Ciência do movimento e do comportamento humano. Liderança que entrega resultados em qualquer ambiente.
             </p>
