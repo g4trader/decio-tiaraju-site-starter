@@ -113,7 +113,7 @@ export default function Page() {
                 alt="Décio Tiarajú Rosa de Oliveira em treinamento"
                 width={640}
                 height={800}
-                className="relative w-full scale-125 object-cover object-center"
+                className="relative w-full scale-110 object-cover object-[center_38%]"
                 priority
               />
             </div>
