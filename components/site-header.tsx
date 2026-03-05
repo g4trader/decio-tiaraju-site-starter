@@ -56,7 +56,7 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-gradient-to-r from-[#041024] via-[#0f2f75] to-[#041024] shadow-lg shadow-[#0f2f75]/20">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-gradient-to-r from-[#0d1f0a] via-[#1e4d16] to-[#0d1f0a] shadow-lg shadow-[#2B651D]/20">
       <div className="container flex items-center justify-between py-4">
         <Link
           href="/"
@@ -104,7 +104,7 @@ export function SiteHeader() {
                 onMouseEnter={handleServicosMouseEnter}
                 onMouseLeave={handleServicosMouseLeave}
               >
-                <div className="rounded-xl border border-white/10 bg-gradient-to-br from-[#041024] via-[#0f2f75] to-[#041024] p-2 shadow-2xl">
+                <div className="rounded-xl border border-white/10 bg-gradient-to-br from-[#0d1f0a] via-[#1e4d16] to-[#0d1f0a] p-2 shadow-2xl">
                   {servicosLinks.map((link) => (
                     <Link
                       key={link.href}
@@ -143,7 +143,7 @@ export function SiteHeader() {
           id="mobile-menu"
           className="md:hidden"
         >
-          <div className="border-t border-white/10 bg-gradient-to-br from-[#041024] via-[#0f2f75] to-[#041024] px-4 pb-6 pt-4 shadow-2xl shadow-black/40">
+          <div className="border-t border-white/10 bg-gradient-to-br from-[#0d1f0a] via-[#1e4d16] to-[#0d1f0a] px-4 pb-6 pt-4 shadow-2xl shadow-black/40">
             <div className="flex flex-col gap-3 text-sm font-medium text-white">
               {navLinks.map((link) => (
                 <Link
