@@ -137,7 +137,7 @@ export default function Page() {
           </div>
         <div>
             <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-6xl">
-              Mentoria que transforma disciplina em método e gera resultados positivos, mesmo em cenários adversos. XXXXX
+              Mentoria que transforma disciplina em método e gera resultados positivos, mesmo em cenários adversos.
           </h1>
             <p className="mt-6 text-lg text-white/90">
               Personal Trainer, palestrante e mentor com trajetória militar, esportiva
@@ -175,8 +175,8 @@ export default function Page() {
                 <p>anos formando líderes, professores e equipes multidisciplinares.</p>
               </div>
               <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
-                <p className="text-3xl font-semibold text-white">+ de 9.000</p>
-                <p>alunos, atletas e empresas impactados por treinamentos e mentorias.</p>
+                <p className="text-3xl font-semibold text-white">+ de 10.000</p>
+                <p>clientes impactados por treinamentos, mentorias e palestras.</p>
               </div>
               <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-10">
                 <p className="text-[2.8rem] font-semibold leading-tight text-white md:text-[3.4rem]">
